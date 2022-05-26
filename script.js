@@ -47,4 +47,3 @@ const myTodoList = new Vue ({
     }
 });
 
-console.log(myTodoList.newTodo);
