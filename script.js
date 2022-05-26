@@ -32,9 +32,12 @@ const myTodoList = new Vue ({
 
     methods : {
         addItem() {
+            const task = {
+                text : this.newTodo,
+                done : false
+            }
             if(this.newTodo !== "") {
-                // creare un nuovo oggetto in cui newTodo è il text e in cui done:false
-                this.todos.push(this.newTodo);
+                this.todos.push(task);
                 this.newTodo = "";
             }
         },
